@@ -1,0 +1,60 @@
+<!doctype html>
+
+<html lang="fr">
+    <head>
+        <link rel="stylesheet" href="styles.css" />
+        <meta charset="utf-8" />
+        <title>Oral de stage</title>
+        <meta name="google-site-verification" content="SQtyrX-bMUf4c-SClPzKfX-TVOEOgQgoGubxzq0jOwU" />
+    </head>
+    <body>
+        <div class="welcome-container">
+            <h1 id="welcome-title">Chargement...</h1>
+            <p id="live-clock"></p>
+        </div>
+        <p>
+            Voici un
+            <span class="special">site que j'ai construit</span> qui résume mes compétences acquise durant le stage et qui contient le lien pour accéder à mon rapport de stage : 
+            <a href="https://docs.google.com/document/d/1jcwdP3yTZOsPtX7uFkfOZDMspBHcadro2hXo2VqD0S8/edit?tab=t.0" target="_blank">lien</a>.
+        </p>
+        <div class="logos-container">
+            <img src="https://data.ladn.eu/wp-content/uploads/2024/05/logo-covage-1200x630.jpg" alt="Logo Covage Infra"/>
+            <img src="https://media.licdn.com/dms/image/v2/D4E0BAQG9aARckIvshw/company-logo_200_200/company-logo_200_200/0/1727852964377/institution_jeanne_d_arc_colombes_logo?e=2147483647&v=beta&t=i6aUZCrmey0q6ivGOaEp15EVkgDqTOuveoRA1TMIR7o" alt="Logo Jeanne D'Arc" />
+        </div>
+        <h2 class="souligner">Compétences Techniques (Savoir-faire) : </h2>
+        <ul>
+            <li>Design et mise en page : Personnalisation graphique en CSS (gestion des dégradés, des polices, adaptation des tailles d'images).</li><br>
+            <li>Logique de programmation : Création d'un script dynamique en JavaScript pour l'interactivité (gestion des événements avec le clic de souris).</li>
+        <h2 class="souligner">Compétences Professionnelles (Savoir-être) :</h2>
+        <ul>
+            <li>Autonomie et recherche : Capacité à chercher des solutions face à un bug technique (comme le nettoyage des URL d'images).</li><br>
+            <li>Écoute et application : Intégration des "Astuces DSI" données par les professionnels de Covage Infra.</li>
+        </ul>
+        <h2 class="souligner">Les plus grandes difficultés que j'ai rencontrées en codant ce site :</h2>
+        <ul>
+            <li>Apprendre à nettoyer les URL d'images provenant des moteurs de recherche pour pouvoir les intégrer au site 
+                <span class="tooltip">? <span class="tooltiptext">Astuce DSI : Il faut extraire l'URL source directe de l'image (qui finit souvent par .png ou .jpg) et supprimer tout le reste du lien.</span></span>
+            </li>
+            <li>Apprendre à gérer la taille d'une image sans la déformer 
+                <span class="tooltip">? <span class="tooltiptext">Astuce DSI : En CSS, on fixe une largeur (ex: width: 300px) et on applique la propriété height: auto pour garder les proportions.</span></span>
+            </li>
+            <li>Réussir a indexé son site pour qu'il soit accesible sur google
+                <span class="tooltip">? <span class="tooltiptext">Astuce DSI : Il faut soumettre l'indexion à google search console puis attendre 2-3 jours et rajouter un fichier sitemap.xml dans la meme dépot github</span></span>
+            </li>
+        </ul>
+        <p class="souligner">Les différents langages utilisés pour coder un site :</p>
+        <ul>
+            <li><strong>Le HTML :</strong> C'est ce qui permet d'écrire dans le site, il constitue la base et la structure.</li>
+            <li><strong>Le CSS :</strong> Il sert à modifier l'apparence et le design du site.</li>
+            <li><strong>Le JavaScript :</strong> Il sert d'ordinaire à rendre le site dynamique et interactif.</li>
+        </ul>
+        <footer>
+            <div class="footer-content">
+                <p>© 2026 - Rapport de Stage de Seconde</p>
+                <p>Institution Jeanne d'Arc (Colombes)</p>
+                <p class="mention-dsi">Développé dans le cadre de mon stage à la DSI de <span>Covage Infra</span></p>
+            </div>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>
