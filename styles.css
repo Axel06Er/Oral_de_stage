@@ -191,3 +191,14 @@ footer p {
     transform: scale(1.05);
     opacity: 0.9;
 }
+
+li:hover, .logos-container a img:hover {
+    box-shadow: 0 10px 25px -5px rgba(14, 165, 233, 0.4);
+    transform: translateY(-2px);
+    transition: all 0.3s ease;
+}
+
+li, .logos-container a img {
+    transition: all 0.3s ease;
+}
+
