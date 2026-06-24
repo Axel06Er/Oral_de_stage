@@ -22,20 +22,37 @@ window.addEventListener('DOMContentLoaded', () => {
             index++;
             setTimeout(typeWriter, 35);  
         } else {
-            welcomeTitle.style.borderRight = "none"
+            welcomeTitle.style.borderRight = "none";
         }
     }
 
     typeWriter();
+    
     function updateTime() {
-            const clockNow = new Date();
-            const clockHour = clockNow.getHours();
-             const minutes = clockNow.getMinutes().toString().padStart(2, '0');
-            const seconds = clockNow.getSeconds().toString().padStart(2, '0');
-            liveClock.textContent = `Il est actuellement ${clockHour}h${minutes}:${seconds}`;
-        }
+        const clockNow = new Date();
+        const clockHour = clockNow.getHours();
+        const minutes = clockNow.getMinutes().toString().padStart(2, '0');
+        const seconds = clockNow.getSeconds().toString().padStart(2, '0');
+        liveClock.textContent = `Il est actuellement ${clockHour}h${minutes}:${seconds}`;
+    }
 
     updateTime();
-    
     setInterval(updateTime, 1000);
+
+    const backToTopBtn = document.getElementById('backToTop');
+
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 300) {
+            backToTopBtn.style.display = "block";
+        } else {
+            backToTopBtn.style.display = "none";
+        }
+    });
+
+    backToTopBtn.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth' 
+        });
+    });
 });
