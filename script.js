@@ -20,7 +20,9 @@ window.addEventListener('DOMContentLoaded', () => {
         if (index < message.length) {
             welcomeTitle.textContent += message.charAt(index);
             index++;
-            setTimeout(typeWriter, 35);  
+            setTimeout(typeWriter, 42
+                
+            );  
         } else {
             welcomeTitle.style.borderRight = "none";
         }
